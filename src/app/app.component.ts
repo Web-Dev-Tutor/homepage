@@ -26,6 +26,7 @@ export class AppComponent {
 
   WindowsURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-b1/vigcoin-wallet-installer-v1.0.0-b2.msi";
   LinuxURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-b1/VIGCOIN-x86_64.AppImage";
+  QQGroupAdd = "//shang.qq.com/wpa/qunwpa?idkey=fb1f8b59d028d110b3192d794e76039badb44cc8ba42e30b5b17bb573b0efd9d";
 
   constructor(
     private translate: TranslateService
