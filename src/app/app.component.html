@@ -27,15 +27,6 @@
       <li class="nav-item">
         <a class="nav-link" href="#goal">{{ 'NAV-GOAL' | translate }}</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#mining">{{ 'NAV-MINING' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#development">{{ 'NAV-DEVELOPMENT' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">{{ 'NAV-CONTACT' | translate }}</a>
-      </li>
     </ul>
     <select class="selectpicker" data-width="auto" data-style="btn-dark" disabled>
       <option value="en" data-content='<span class="flag-icon flag-icon-us"></span> English '>English</option>
@@ -60,12 +51,10 @@
           <a class="btn btn-primary btn-lg" href="#enrollment" role="button">{{ 'WELCOME-SPECIALTY' | translate }}</a>
         </div>
         <div class="col text-center">
-          <a class="btn btn-primary btn-lg" href="#enrollment"
-            role="button">{{'WELCOME-DISCOUNT' | translate}}</a>
+          <a class="btn btn-primary btn-lg" href="#enrollment" role="button">{{'WELCOME-DISCOUNT' | translate}}</a>
         </div>
         <div class="col text-center">
-          <a class="btn btn-primary btn-lg" href="goal"
-            role="button">{{ 'WELCOME-GOAL' | translate }}</a>
+          <a class="btn btn-primary btn-lg" href="goal" role="button">{{ 'WELCOME-GOAL' | translate }}</a>
         </div>
       </div>
     </div>
@@ -158,29 +147,41 @@
 </div>
 
 <div class="container-fluid">
-  <h1 class="border-left"><a name="target"></a>课程设置</h1>
+  <h1 class="border-left"><a name="course-design"></a>课程设置</h1>
   <table class="table table-bordered table-hover">
-      <thead class="table-dark">
-        <tr>
-          <th>项目</th>
-          <th>说明</th>
+    <thead class="table-dark">
+      <tr>
+        <th>项目</th>
+        <th>说明</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>授课方式</th>
+        <td>全日制，面授</td>
+      </tr>
+      <tr>
+        <th>开班人数</th>
+        <td>一个班10人即开班，最多不超过30人</td>
+      </tr>
+      <tr>
+        <th>授课时间</th>
+        <td>周一到周五，周六日休息</td>
+      </tr>
+      <tr>
+        <th>课程时长</th>
+        <td>约8.5周，二个月左右</td>
+      </tr>
+      <tr>
+        <th>授课城市</th>
+        <td>浙江省台州市</td>
+      </tr>
+      <tr>
+          <th>课程重修</th>
+          <td>学员如果没有能掌握一次课程的大部分内容，可以选择免费重修。只需要交少量的电费与课桌费(约500元左右)，就可以参与重修。</td>
         </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>授课方式</th>
-          <td>全日制</td>
-        </tr>
-        <tr>
-          <th>授课时间</th>
-          <td>周一到周五，周六日休息</td>
-        </tr>
-        <tr>
-          <th>课程时长</th>
-          <td>约8.5周，二个月左右</td>
-        </tr>
-      </tbody>
-    </table>
+    </tbody>
+  </table>
 </div>
 
 <div class="container-fluid">
@@ -223,53 +224,50 @@
 </div>
 <div class="container-fluid">
   <h1 class="border-left"><a name="mentor-intro"></a>{{ 'NAV-MENTOR-INTRO' | translate }}</h1>
-  <div id="carouselRoadMap" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselRoadMap" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselRoadMap" data-slide-to="1"></li>
-      <li data-target="#carouselRoadMap" data-slide-to="2"></li>
-      <li data-target="#carouselRoadMap" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item mentor-intro-item active">
-        <img class="d-block w-100" src="/assets/images/mentor-intro/1.jpeg" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ 'MENTOR-INTRO-T1' | translate }}</h5>
-          <p>{{ 'MENTOR-INTRO-T1-INTRO' | translate }}</p>
-        </div>
-      </div>
-      <div class="carousel-item mentor-intro-item">
-        <img class="d-block w-100" src="/assets/images/mentor-intro/2.jpeg" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ 'MENTOR-INTRO-T2' | translate }}</h5>
-          <p>{{ 'MENTOR-INTRO-T2-INTRO' | translate }}</p>
-        </div>
-      </div>
-      <div class="carousel-item mentor-intro-item">
-        <img class="d-block w-100" src="/assets/images/mentor-intro/3.jpg" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ 'MENTOR-INTRO-T3' | translate }}</h5>
-          <p>{{ 'MENTOR-INTRO-T3-INTRO' | translate }}</p>
-        </div>
-      </div>
-      <div class="carousel-item mentor-intro-item">
-        <img class="d-block w-100" src="/assets/images/global.jpg" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ 'MENTOR-INTRO-T4' | translate }}</h5>
-          <p>{{ 'MENTOR-INTRO-T4-INTRO' | translate }}</p>
-        </div>
-      </div>
+
+  <div class="row mentor">
+    <div class="col">
+      <h1>{{ 'MENTOR-INTRO-T1' | translate }}</h1>
+      <p>{{ 'MENTOR-INTRO-T1-INTRO' | translate }}</p>
     </div>
-    <a class="carousel-control-prev" href="#carouselRoadMap" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselRoadMap" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <div class="col">
+      <h1>{{ 'MENTOR-INTRO-T2' | translate }}</h1>
+      <p>{{ 'MENTOR-INTRO-T2-INTRO' | translate }}</p>
+    </div>
+    <div class="col">
+      <h1>{{ 'MENTOR-INTRO-T3' | translate }}</h1>
+      <p>{{ 'MENTOR-INTRO-T3-INTRO' | translate }}</p>
+    </div>
+    <div class="col">
+      <h1>{{ 'MENTOR-INTRO-T4' | translate }}</h1>
+      <p>{{ 'MENTOR-INTRO-T4-INTRO' | translate }}</p>
+    </div>
   </div>
 </div>
+
+<div class="container-fluid">
+  <h1 class="border-left"><a name="mentor-intro"></a>项目实战</h1>
+  <p>项目实战分两种：</p>
+  <ol>
+    <li>第一种是必须完成的。由所有人一起完成，类型包括小型的练手项目。要求就是理解软件开发的项目协作过程，并参与贡献。类似包括：<ul>
+        <li>小型的文件服务器</li>
+        <li>小型的聊天室</li>
+        <li>小型论坛</li>
+      </ul>
+    </li>
+    <li>
+      第二种是真实的开源项目。参加可以获得奖励，由一个或者多个人参与。都是真实的，有一定完成度的开源项目。选择向其添加一个功能。项目类型有：
+      <ul>
+        <li>论坛项目</li>
+        <li>IM项目</li>
+        <li>电商项目</li>
+        <li>加密币项目</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+
+
 
 <div class="container-fluid">
   <div class="row about">
